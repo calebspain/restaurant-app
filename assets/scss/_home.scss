@@ -1,0 +1,117 @@
+#welcome {
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    width: 100%;
+    height: 100vh;
+    .welcome-menu {
+        position: relative;
+        padding: 50px;
+        background: white;
+        .logo {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 50px;
+            img {
+                max-width: 100px;
+            }
+        }
+        .menu {
+            margin-bottom: 50px;
+            .menu-title {
+                margin-bottom: 20px;
+                padding-bottom: 20px;
+                color: #0971ce;
+                font-size: 1.2rem;
+                font-weight: 700;
+                text-transform: uppercase;
+                border-bottom: 1px solid #e2eaef;
+            }
+            .links {
+                li {
+                    a {
+                        font-size: 1.1rem;
+                        display: block;
+                        margin-bottom: 1.4rem;
+                        color: black;
+                        font-weight: 700;
+                        text-decoration: none;
+                        transition: color .3s ease-in-out;
+                        &:hover {
+                            color: red;
+                        }
+                    }
+                }
+            }
+        }
+        .social-icons {
+            display: flex;
+            a {
+                width: 30px;
+                height: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-right: 10px;
+                color: white;
+                background: #c2c8cc;
+                font-size: .9rem;
+                text-decoration: none;
+                border-radius: 50%;
+            }
+        }
+        .location {
+            align-self: center;
+            position: absolute;
+            bottom: 100px;
+            .address {
+                margin-bottom: 20px;
+                color: #7a8d99;
+                line-height: 1.7;
+            }
+            .phone-number {
+                a {
+                    color: #0971ce;
+                    font-size: 2rem;
+                    font-weight: 700;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    .welcome-jumbo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        max-width: calc(100vw - 350px);
+        padding: 50px;
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,7db9e8+100 */
+        background: #ed4852; /* Old browsers */
+        background: -moz-radial-gradient(center, ellipse cover,  #ed4852 0%, #9c1b24 100%); /* FF3.6-15 */
+        background: -webkit-radial-gradient(center, ellipse cover,  #ed4852 0%,#9c1b24 100%); /* Chrome10-25,Safari5.1-6 */
+        background: radial-gradient(ellipse at center,  #ed4852 0%,#9c1b24 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ed4852', endColorstr='#9c1b24',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+        overflow: hidden;
+        .status {
+            display: inline-block;
+            margin-bottom: 20px;
+            padding: 10px;
+            color: white;
+            background: black;
+            font-size: .8rem;
+            font-weight: 700;
+            border-radius: 5px;
+            align-self: flex-start;
+        }
+        h1 {
+            align-self: flex-start;
+            color: white;
+            font-size: 4rem;
+            font-weight: 900;
+        }
+        .burger-fries {
+            position: relative;
+            width: 100%;
+        }
+    }
+}
